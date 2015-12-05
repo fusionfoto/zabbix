@@ -1,0 +1,7 @@
+## Zabbix Cmnd Alias
+Cmnd_Alias ZABBIX_CMD = /usr/bin/check_swift_sweep_time, /usr/bin/check_swift_background_daemon
+## Zabbix Checks
+Defaults:zabbix !requiretty
+
+zabbix ALL=(root) NOPASSWD: ALL
+zabbix ALL=(root) NOPASSWD: ZABBIX_CMD
